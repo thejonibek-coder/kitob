@@ -12458,6 +12458,48 @@ When I met one of them who seemed clever enough to me, I tried to show him my Dr
 
 Then I did not talk to that person about boas, or forests, or stars. I talked to him about bridge, and golf, and politics, and ties.`,
   },
+  {
+    id:21,
+    title: "Savdogarlar Ustozi",
+    author: "Biznes Kitobi",
+    category: "Biznes",
+    description:
+      "Savdogarlar uchun foydali maslahatlar va strategiyalar.",
+      image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ60fSUh2bUxKYaW2l2nnS41iAJapUpLlRu4G74VUsVyA&s=10",
+      rating: 4.7,
+      year: 2020,
+      content: `Savdogarlar ustozi
+Savdogarlar ustozi ("Master of Merchants"), toʻliq nomi Savdogarlar ustozi yoxud haqiqiy omad kaliti, — Ahadquli Xolmuhammad o‘g‘li tomonidan yozilgan o‘zbek tilidagi biznes va axloqiy-ma’rifiy risola. Kitob savdo-sotiqda halollik, ishonch va islomiy tijorat tamoyillarini markazga qo‘yishi bilan tanilgan hamda tadbirkorlikka qiziqqan o‘quvchilar orasida ommalashgan. 
+
+Mazmuni
+Asar tarixiy islom olimi va mashhur savdogar Abdulloh ibn Muborakning tijorat faoliyati, odobi va nasihatlari asosida qurilgan. Muallif muvaffaqiyatni faqat moliyaviy natija bilan emas, balki halollik, taqvo, rostgo‘ylik va xaridorlar bilan adolatli munosabat orqali tushuntiradi. 
+
+Asosiy g‘oyalar
+Kitobda savdogarlar uchun amaliy va axloqiy tavsiyalar jamlangan. Ular orasida:
+
+Halol savdo yuritish.
+
+Sotilgan mahsulotni zarurat tug‘ilganda qaytarish yoki qaytarib olish odoblari.
+
+Odamlarning mulkiga tajovuz qilmaslik.
+
+**Sudxo‘rlik (ribo)**dan saqlanish.
+
+Yolg‘on qasam ichmaslik.
+
+Tarozida aldamaslik.
+
+Narxni sun’iy ravishda oshirish (najsh) kabi amaliyotlardan tiyilish.
+
+Qaysi mahsulotlarni sotish joiz yoki man etilganini bilish. 
+
+Nashri va qabul qilinishi
+Ma’lumotlarga ko‘ra, kitob ilk bor 2021-yilda o‘zbek tilida nashr etilgan. Bosma nashri 160 bet atrofida bo‘lib, "ILM ZIYO ZAKOVAT" nashriyoti tomonidan chop etilgan. Kitob O‘zbekistondagi kitob do‘konlari va kutubxona platformalarida uchraydi hamda biznes va shaxsiy rivojlanish adabiyotiga qiziquvchilar orasida tavsiya qilinadi. 
+
+Nima uchun e’tiborga loyiq
+Ko‘plab zamonaviy biznes kitoblari marketing yoki menejmentga urg‘u bersa, Savdogarlar ustozi tijoratni axloqiy mas’uliyat bilan bog‘laydi. Shu sababli u biznes qo‘llanmasidan ko‘ra ko‘proq savdo madaniyati, ishonch va halol tadbirkorlik qadriyatlarini yorituvchi ma’rifiy asar sifatida o‘qiladi.`
+  },
 ];
 
 /*

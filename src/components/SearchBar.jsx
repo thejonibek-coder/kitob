@@ -1,39 +1,56 @@
 "use client";
 
 import { useState } from "react";
-import { Search, X } from "lucide-react";
+import { Mail, Send } from "lucide-react";
 
-export default function SearchBar({
-  onSearch = () => {},
-  placeholder = "Search books...",
-}) {
-  const [query, setQuery] = useState("");
+export default function SearchBar() {
+  const [email, setEmail] = useState("");
+  const [loading, setLoading] = useState(false);
+  const [message, setMessage] = useState("");
 
-  const handleChange = (value) => {
-    setQuery(value);
-    onSearch(value);
-  };
-
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    onSearch(query);
-  };
 
-  const clearSearch = () => {
-    setQuery("");
-    onSearch("");
+    if (!email.trim()) {
+      setMessage("Email kiriting!");
+      return;
+    }
+
+    setLoading(true);
+    setMessage("");
+
+    try {
+      const res = await fetch("/api/subscribe", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ email }),
+      });
+
+      const data = await res.json();
+
+      if (data.success) {
+        setMessage("✅ Obuna bo'ldingiz!");
+        setEmail("");
+      } else {
+        setMessage(`❌ ${data.message}`);
+      }
+    } catch (error) {
+      console.error(error);
+      setMessage("❌ Xatolik yuz berdi!");
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
     <form
       onSubmit={handleSubmit}
-      className="relative w-full max-w-xl"
+      className="flex w-full max-w-xl flex-col gap-3 sm:flex-row"
     >
-      <div className="relative">
-
-        {/* Search icon */}
-
-        <Search
+      <div className="relative flex-1">
+        <Mail
           className="
             absolute left-4 top-1/2
             h-5 w-5
@@ -42,27 +59,23 @@ export default function SearchBar({
           "
         />
 
-        {/* Input */}
-
         <input
-          type="search"
-          value={query}
-          onChange={(e) => handleChange(e.target.value)}
-          placeholder={placeholder}
-          aria-label={placeholder}
+          type="email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          placeholder="Email manzilingiz"
+          disabled={loading}
           className="
-            w-full
+            h-14 w-full
             rounded-xl
             border border-gray-200
             bg-white
-            py-3 pl-12 pr-11
+            pl-12 pr-4
             text-gray-900
-            placeholder:text-gray-400
             outline-none
-            transition-all duration-200
+            transition
 
             hover:border-gray-300
-
             focus:border-blue-500
             focus:ring-2
             focus:ring-blue-500/20
@@ -71,38 +84,47 @@ export default function SearchBar({
             dark:bg-gray-900
             dark:text-white
             dark:placeholder:text-gray-500
-            dark:hover:border-gray-700
           "
         />
-
-        {/* Clear button */}
-
-        {query && (
-          <button
-            type="button"
-            onClick={clearSearch}
-            aria-label="Clear search"
-            className="
-              absolute right-3 top-1/2
-              flex h-7 w-7
-              -translate-y-1/2
-              items-center justify-center
-              rounded-lg
-              text-gray-400
-              transition-colors
-
-              hover:bg-gray-100
-              hover:text-gray-700
-
-              dark:hover:bg-gray-800
-              dark:hover:text-gray-200
-            "
-          >
-            <X className="h-4 w-4" />
-          </button>
-        )}
-
       </div>
+
+      <button
+        type="submit"
+        disabled={loading}
+        className="
+          flex h-14
+          items-center
+          justify-center
+          gap-2
+          rounded-xl
+          bg-blue-600
+          px-7
+          font-semibold
+          text-white
+          transition-all
+
+          hover:bg-blue-700
+          active:scale-95
+
+          disabled:cursor-not-allowed
+          disabled:opacity-50
+        "
+      >
+        {loading ? (
+          "Yuborilmoqda..."
+        ) : (
+          <>
+            Obuna bo'lish
+            <Send className="h-5 w-5" />
+          </>
+        )}
+      </button>
+
+      {message && (
+        <p className="absolute mt-16 text-sm">
+          {message}
+        </p>
+      )}
     </form>
   );
 }
