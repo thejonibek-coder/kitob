@@ -21,11 +21,49 @@ import { useTheme, useFavorites } from "@/app/providers";
 import { useLanguage } from "@/app/LanguageContext";
 
 const navLinks = [
-  { href: "/", key: "home", icon: Home },
-  { href: "/books", key: "books", icon: BookOpen },
-  { href: "/categories", key: "categories", icon: Grid3X3 },
-  { href: "/favorites", key: "favorites", icon: Heart },
-  { href: "/about", key: "about", icon: Info },
+  {
+    href: "/",
+    key: "home",
+    icon: Home,
+  },
+  {
+    href: "/books",
+    key: "books",
+    icon: BookOpen,
+  },
+  {
+    href: "/categories",
+    key: "categories",
+    icon: Grid3X3,
+  },
+  {
+    href: "/favorites",
+    key: "favorites",
+    icon: Heart,
+  },
+  {
+    href: "/about",
+    key: "about",
+    icon: Info,
+  },
+];
+
+const languages = [
+  {
+    code: "uz",
+    name: "O'zbekcha",
+    flag: "🇺🇿",
+  },
+  {
+    code: "en",
+    name: "English",
+    flag: "🇬🇧",
+  },
+  {
+    code: "ru",
+    name: "Русский",
+    flag: "🇷🇺",
+  },
 ];
 
 export default function Navbar() {
@@ -38,55 +76,93 @@ export default function Navbar() {
 
   const pathname = usePathname();
 
-  const languages = [
-    { code: "uz", name: "O'zbekcha", flag: "🇺🇿" },
-    { code: "en", name: "English", flag: "🇬🇧" },
-    { code: "ru", name: "Русский", flag: "🇷🇺" },
-  ];
-
   const handleLanguageChange = (code) => {
     changeLanguage(code);
     setLanguageOpen(false);
   };
 
+  const closeMobile = () => {
+    setMobileOpen(false);
+  };
+
   return (
-    <nav className="sticky top-0 z-50 backdrop-blur-xl bg-white/80 dark:bg-gray-950/80 border-b border-gray-200 dark:border-gray-800">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <nav
+      className="
+        sticky top-0 z-50
+        border-b border-gray-200
+        bg-white/80
+        backdrop-blur-xl
+        dark:border-gray-800
+        dark:bg-gray-950/80
+      "
+    >
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 
-        {/* Navbar */}
-        <div className="flex items-center justify-between h-16">
+        {/* =========================
+            MAIN NAVBAR
+        ========================== */}
 
-          {/* Logo */}
+        <div className="flex h-16 items-center justify-between">
+
+          {/* LOGO */}
+
           <Link
             href="/"
-            className="flex items-center gap-2 group"
+            className="group flex items-center gap-2"
           >
-            <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center shadow-lg shadow-blue-500/25 group-hover:shadow-blue-500/40 transition-shadow">
-              <BookOpen className="w-5 h-5 text-white" />
+            <div
+              className="
+                flex h-9 w-9 items-center justify-center
+                rounded-xl
+                bg-gradient-to-br
+                from-blue-500 to-indigo-600
+                shadow-lg shadow-blue-500/25
+                transition-all duration-300
+                group-hover:scale-105
+                group-hover:shadow-blue-500/40
+              "
+            >
+              <BookOpen className="h-5 w-5 text-white" />
             </div>
 
-            <span className="text-xl font-bold bg-gradient-to-r from-gray-900 to-gray-600 dark:from-white dark:to-gray-300 bg-clip-text text-transparent">
+            <span
+              className="
+                bg-gradient-to-r
+                from-gray-900 to-gray-600
+                bg-clip-text
+                text-xl font-bold
+                text-transparent
+                dark:from-white
+                dark:to-gray-300
+              "
+            >
               E.BOOKS
             </span>
           </Link>
 
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-1">
+          {/* =========================
+              DESKTOP NAVIGATION
+          ========================== */}
+
+          <div className="hidden items-center gap-1 md:flex">
+
             {navLinks.map((link) => {
               const Icon = link.icon;
+              const active = pathname === link.href;
 
               return (
                 <Link
                   key={link.href}
                   href={link.href}
-                  className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
-                    pathname === link.href
-                      ? "bg-blue-50 dark:bg-blue-900/20 text-blue-600 dark:text-blue-400"
-                      : "text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-gray-900 dark:hover:text-gray-200"
+                  className={`rounded-lg px-3 py-2 text-sm font-medium transition-all duration-200 ${
+                    active
+                      ? "bg-blue-50 text-blue-600 dark:bg-blue-900/20 dark:text-blue-400"
+                      : "text-gray-600 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-800 dark:hover:text-gray-200"
                   }`}
                 >
                   <span className="flex items-center gap-2">
-                    <Icon className="w-4 h-4" />
+                    <Icon className="h-4 w-4" />
+
                     {t(link.key)}
                   </span>
                 </Link>
@@ -94,139 +170,243 @@ export default function Navbar() {
             })}
           </div>
 
-          {/* Right Actions */}
-          <div className="flex items-center gap-2">
+          {/* =========================
+              RIGHT ACTIONS
+          ========================== */}
+
+          <div className="flex items-center gap-1">
 
             {/* Search */}
+
             <Link
               href="/books"
-              className="hidden sm:flex p-2 rounded-lg text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
               aria-label="Search"
+              className="
+                hidden rounded-lg p-2
+                text-gray-600
+                transition-colors
+                hover:bg-gray-100
+                hover:text-gray-900
+                sm:flex
+                dark:text-gray-400
+                dark:hover:bg-gray-800
+                dark:hover:text-gray-200
+              "
             >
-              <Search className="w-5 h-5" />
+              <Search className="h-5 w-5" />
             </Link>
 
             {/* Language */}
+
             <div className="relative">
+
               <button
-                onClick={() => setLanguageOpen(!languageOpen)}
-                className="flex items-center gap-1.5 p-2 rounded-lg text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+                type="button"
+                onClick={() =>
+                  setLanguageOpen((value) => !value)
+                }
+                className="
+                  flex items-center gap-1.5
+                  rounded-lg p-2
+                  text-gray-600
+                  transition-colors
+                  hover:bg-gray-100
+                  hover:text-gray-900
+                  dark:text-gray-400
+                  dark:hover:bg-gray-800
+                  dark:hover:text-gray-200
+                "
                 aria-label="Change language"
               >
-                <Languages className="w-5 h-5" />
+                <Languages className="h-5 w-5" />
 
-                <span className="hidden sm:block text-xs font-bold uppercase">
+                <span className="hidden text-xs font-bold uppercase sm:block">
                   {language}
                 </span>
               </button>
 
-              {languageOpen && (
-                <div className="absolute right-0 mt-2 w-44 rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 shadow-xl overflow-hidden">
+              {/* Language dropdown */}
 
-                  <div className="px-3 py-2 text-xs font-semibold text-gray-400 uppercase">
+              {languageOpen && (
+                <div
+                  className="
+                    absolute right-0 mt-2
+                    w-48 overflow-hidden
+                    rounded-xl
+                    border border-gray-200
+                    bg-white
+                    shadow-xl
+                    dark:border-gray-800
+                    dark:bg-gray-900
+                  "
+                >
+
+                  <div className="px-4 py-3 text-xs font-semibold uppercase text-gray-400">
                     Language
                   </div>
 
-                  {languages.map((lang) => (
-                    <button
-                      key={lang.code}
-                      onClick={() => handleLanguageChange(lang.code)}
-                      className={`w-full flex items-center gap-3 px-4 py-3 text-sm text-left transition-colors ${
-                        language === lang.code
-                          ? "bg-blue-50 dark:bg-blue-900/20 text-blue-600 dark:text-blue-400"
-                          : "text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800"
-                      }`}
-                    >
-                      <span className="text-lg">
-                        {lang.flag}
-                      </span>
+                  {languages.map((lang) => {
+                    const active = language === lang.code;
 
-                      <span>
-                        {lang.name}
-                      </span>
-
-                      {language === lang.code && (
-                        <span className="ml-auto">
-                          ✓
+                    return (
+                      <button
+                        key={lang.code}
+                        type="button"
+                        onClick={() =>
+                          handleLanguageChange(lang.code)
+                        }
+                        className={`flex w-full items-center gap-3 px-4 py-3 text-left text-sm transition-colors ${
+                          active
+                            ? "bg-blue-50 text-blue-600 dark:bg-blue-900/20 dark:text-blue-400"
+                            : "text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-800"
+                        }`}
+                      >
+                        <span className="text-lg">
+                          {lang.flag}
                         </span>
-                      )}
-                    </button>
-                  ))}
 
+                        <span>{lang.name}</span>
+
+                        {active && (
+                          <span className="ml-auto font-bold">
+                            ✓
+                          </span>
+                        )}
+                      </button>
+                    );
+                  })}
                 </div>
               )}
             </div>
 
             {/* Theme */}
+
             <button
+              type="button"
               onClick={toggleTheme}
-              className="p-2 rounded-lg text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
               aria-label="Toggle theme"
+              className="
+                rounded-lg p-2
+                text-gray-600
+                transition-colors
+                hover:bg-gray-100
+                hover:text-gray-900
+                dark:text-gray-400
+                dark:hover:bg-gray-800
+                dark:hover:text-gray-200
+              "
             >
               {theme === "dark" ? (
-                <Sun className="w-5 h-5" />
+                <Sun className="h-5 w-5" />
               ) : (
-                <Moon className="w-5 h-5" />
+                <Moon className="h-5 w-5" />
               )}
             </button>
 
             {/* Favorites */}
+
             <Link
               href="/favorites"
-              className="hidden sm:flex relative p-2 rounded-lg text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+              aria-label="Favorites"
+              className="
+                relative hidden rounded-lg p-2
+                text-gray-600
+                transition-colors
+                hover:bg-gray-100
+                hover:text-gray-900
+                sm:flex
+                dark:text-gray-400
+                dark:hover:bg-gray-800
+                dark:hover:text-gray-200
+              "
             >
-              <Heart className="w-5 h-5" />
+              <Heart className="h-5 w-5" />
 
               {favorites.length > 0 && (
-                <span className="absolute -top-1 -right-1 min-w-5 h-5 px-1 bg-red-500 text-white text-xs font-bold rounded-full flex items-center justify-center">
+                <span
+                  className="
+                    absolute -right-1 -top-1
+                    flex h-5 min-w-5
+                    items-center justify-center
+                    rounded-full
+                    bg-red-500
+                    px-1
+                    text-xs font-bold
+                    text-white
+                  "
+                >
                   {favorites.length}
                 </span>
               )}
             </Link>
 
-            {/* Mobile Menu */}
+            {/* Mobile menu */}
+
             <button
-              onClick={() => setMobileOpen(!mobileOpen)}
-              className="md:hidden p-2 rounded-lg text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+              type="button"
+              onClick={() =>
+                setMobileOpen((value) => !value)
+              }
               aria-label="Open menu"
+              className="
+                rounded-lg p-2
+                text-gray-600
+                transition-colors
+                hover:bg-gray-100
+                dark:text-gray-400
+                dark:hover:bg-gray-800
+                md:hidden
+              "
             >
               {mobileOpen ? (
-                <X className="w-5 h-5" />
+                <X className="h-5 w-5" />
               ) : (
-                <Menu className="w-5 h-5" />
+                <Menu className="h-5 w-5" />
               )}
             </button>
+
           </div>
         </div>
       </div>
 
-      {/* Mobile Drawer */}
-      {mobileOpen && (
-        <div className="md:hidden border-t border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950">
+      {/* =========================
+          MOBILE DRAWER
+      ========================== */}
 
-          <div className="px-4 py-3 space-y-1">
+      {mobileOpen && (
+        <div
+          className="
+            border-t border-gray-200
+            bg-white
+            dark:border-gray-800
+            dark:bg-gray-950
+            md:hidden
+          "
+        >
+          <div className="space-y-1 px-4 py-4">
 
             {navLinks.map((link) => {
               const Icon = link.icon;
+              const active = pathname === link.href;
 
               return (
                 <Link
                   key={link.href}
                   href={link.href}
-                  onClick={() => setMobileOpen(false)}
-                  className={`flex items-center gap-3 px-3 py-3 rounded-lg text-sm font-medium transition-colors ${
-                    pathname === link.href
-                      ? "bg-blue-50 dark:bg-blue-900/20 text-blue-600 dark:text-blue-400"
-                      : "text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
+                  onClick={closeMobile}
+                  className={`flex items-center gap-3 rounded-xl px-3 py-3 text-sm font-medium transition-colors ${
+                    active
+                      ? "bg-blue-50 text-blue-600 dark:bg-blue-900/20 dark:text-blue-400"
+                      : "text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-800"
                   }`}
                 >
-                  <Icon className="w-5 h-5" />
+                  <Icon className="h-5 w-5" />
 
                   {t(link.key)}
 
                   {link.href === "/favorites" &&
                     favorites.length > 0 && (
-                      <span className="ml-auto bg-red-500 text-white text-xs font-bold px-2 py-0.5 rounded-full">
+                      <span className="ml-auto rounded-full bg-red-500 px-2 py-0.5 text-xs font-bold text-white">
                         {favorites.length}
                       </span>
                     )}
@@ -234,30 +414,41 @@ export default function Navbar() {
               );
             })}
 
-            {/* Mobile Language */}
-            <div className="pt-3 mt-3 border-t border-gray-200 dark:border-gray-800">
+            {/* Mobile language */}
 
-              <p className="px-3 mb-2 text-xs font-semibold text-gray-400 uppercase">
+            <div className="mt-3 border-t border-gray-200 pt-4 dark:border-gray-800">
+
+              <p className="mb-3 px-3 text-xs font-semibold uppercase text-gray-400">
                 Language
               </p>
 
               <div className="grid grid-cols-3 gap-2">
-                {languages.map((lang) => (
-                  <button
-                    key={lang.code}
-                    onClick={() => handleLanguageChange(lang.code)}
-                    className={`py-2 rounded-lg text-sm font-medium transition-colors ${
-                      language === lang.code
-                        ? "bg-blue-600 text-white"
-                        : "bg-gray-100 dark:bg-gray-900 text-gray-600 dark:text-gray-300"
-                    }`}
-                  >
-                    {lang.flag} {lang.code.toUpperCase()}
-                  </button>
-                ))}
-              </div>
 
+                {languages.map((lang) => {
+                  const active = language === lang.code;
+
+                  return (
+                    <button
+                      key={lang.code}
+                      type="button"
+                      onClick={() =>
+                        handleLanguageChange(lang.code)
+                      }
+                      className={`rounded-xl py-2.5 text-sm font-medium transition-colors ${
+                        active
+                          ? "bg-blue-600 text-white"
+                          : "bg-gray-100 text-gray-600 hover:bg-gray-200 dark:bg-gray-900 dark:text-gray-300 dark:hover:bg-gray-800"
+                      }`}
+                    >
+                      {lang.flag}{" "}
+                      {lang.code.toUpperCase()}
+                    </button>
+                  );
+                })}
+
+              </div>
             </div>
+
           </div>
         </div>
       )}

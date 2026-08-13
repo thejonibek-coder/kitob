@@ -342,7 +342,7 @@ Kitobni o'qishni davom ettiring.`,
                   Math.max(14, size - 2)
                 )
               }
-              className="flex h-10 w-10 items-center justify-center rounded-xl transition hover:bg-gray-100 dark:hover:bg-gray-800"
+              className="flex h-10 w-10 items-center justify-center rounded-xl transition hover:bg-gray-100 "
               title="Decrease font size"
             >
               <Type size={16} />
@@ -357,7 +357,7 @@ Kitobni o'qishni davom ettiring.`,
                   Math.min(28, size + 2)
                 )
               }
-              className="flex h-10 w-10 items-center justify-center rounded-xl transition hover:bg-gray-100 dark:hover:bg-gray-800"
+              className="flex h-10 w-10 items-center justify-center rounded-xl transition hover:bg-gray-100 "
               title="Increase font size"
             >
               <Type size={20} />
@@ -376,7 +376,7 @@ Kitobni o'qishni davom ettiring.`,
                     : "light"
                 )
               }
-              className="flex h-10 w-10 items-center justify-center rounded-xl transition hover:bg-gray-100 dark:hover:bg-gray-800"
+              className="flex h-10 w-10 items-center justify-center rounded-xl transition hover:bg-gray-100 "
               title="Reading theme"
             >
               {readerTheme === "light" ? (
@@ -393,7 +393,7 @@ Kitobni o'qishni davom ettiring.`,
             <button
               type="button"
               onClick={toggleFullscreen}
-              className="flex h-10 w-10 items-center justify-center rounded-xl transition hover:bg-gray-100 dark:hover:bg-gray-800"
+              className="flex h-10 w-10 items-center justify-center rounded-xl transition hover:bg-gray-100 "
               title="Fullscreen"
             >
               {fullscreen ? (
@@ -410,7 +410,7 @@ Kitobni o'qishni davom ettiring.`,
           MOBILE BOOK TITLE
       ========================== */}
 
-      <div className="border-b border-gray-200 px-4 py-3 sm:hidden dark:border-gray-800">
+      <div className="border-b border-gray-200 px-4 py-3 sm:hidden ">
         <h2 className="truncate text-sm font-semibold">
           {book.title}
         </h2>

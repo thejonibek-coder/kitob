@@ -18,7 +18,7 @@ import {
 import Link from "next/link";
 
 const categories = [
-  "Fiction", "Technology", "Business", "Science", 
+  "Fiction", "Technology", "Business", "Science",
   "Education", "History", "Self Development", "Programming"
 ];
 
@@ -54,138 +54,156 @@ export default function Home() {
   const popularBooks = books.filter((b) => b.popular).slice(0, 8);
   const featuredBook = books.find((b) => b.featured) || books[0];
 
- const categoryCounts = categories.map((category) => ({
-  ...category,
-  count: books.filter(
-    (book) => book.category === category.name
-  ).length,
-}));
+  const categoryCounts = categories.map((category) => ({
+    ...category,
+    count: books.filter(
+      (book) => book.category === category.name
+    ).length,
+  }));
 
   return (
     <div>
       <Hero />
 
       {/* Popular Books */}
-      <section className="py-16 lg:py-24 bg-gray-50/50 dark:bg-gray-950/50">
+      <section className="py-16 lg:py-24 bg-gray-50/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between mb-10">
             <div>
-              <h2 className="text-3xl font-bold text-gray-900 dark:text-white">Popular Books</h2>
-              <p className="mt-2 text-gray-500 dark:text-gray-400">Most loved by our readers</p>
+              <h2 className="text-3xl font-bold text-gray-900">
+                Popular Books
+              </h2>
+              <p className="mt-2 text-gray-500">
+                Most loved by our readers
+              </p>
             </div>
+
             <Link
               href="/books"
-              className="hidden sm:inline-flex items-center gap-2 text-blue-600 dark:text-blue-400 font-semibold hover:gap-3 transition-all"
+              className="hidden sm:inline-flex items-center gap-2 text-blue-600 font-semibold hover:gap-3 transition-all"
             >
               View All <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
+
           <BookGrid books={popularBooks} />
         </div>
       </section>
 
-    {/* Reading Stats */}
-<section className="py-16 lg:py-24">
-  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      {/* Reading Stats */}
+      <section className="py-16 lg:py-24">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-    <div className="text-center mb-12">
-      <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-blue-50 dark:bg-blue-900/20 text-blue-600 dark:text-blue-400 text-sm font-semibold mb-4">
-        📊 E.BOOKS Statistics
-      </div>
+          <div className="text-center mb-12">
+            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-blue-50 text-blue-600 text-sm font-semibold mb-4">
+              📊 E.BOOKS Statistics
+            </div>
 
-      <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white">
-        Bizning kutubxonamiz
-      </h2>
+            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900">
+              Bizning kutubxonamiz
+            </h2>
 
-      <p className="mt-3 text-gray-500 dark:text-gray-400">
-        Har kuni minglab kitobxonlar E.BOOKS'dan foydalanishadi
-      </p>
-    </div>
+            <p className="mt-3 text-gray-500">
+              Har kuni minglab kitobxonlar E.BOOKS'dan foydalanishadi
+            </p>
+          </div>
 
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
 
-      {/* Books */}
-      <div className="group p-7 rounded-3xl bg-blue-50 dark:bg-blue-900/10 border border-blue-100 dark:border-blue-900/30 hover:-translate-y-1 hover:shadow-xl transition-all">
-        <div className="text-4xl mb-5">📚</div>
+            {/* Books */}
+            <div className="group p-7 rounded-3xl bg-blue-50 border border-blue-100 hover:-translate-y-1 hover:shadow-xl transition-all">
+              <div className="text-4xl mb-5">📚</div>
 
-        <div className="text-3xl font-bold text-gray-900 dark:text-white">
-          {books.length}+
+              <div className="text-3xl font-bold text-gray-900">
+                {books.length}+
+              </div>
+
+              <p className="mt-2 text-gray-500">
+                Mavjud kitoblar
+              </p>
+            </div>
+
+            {/* Readers */}
+            <div className="group p-7 rounded-3xl bg-purple-50 border border-purple-100 hover:-translate-y-1 hover:shadow-xl transition-all">
+              <div className="text-4xl mb-5">👥</div>
+
+              <div className="text-3xl font-bold text-gray-900">
+                1,200+
+              </div>
+
+              <p className="mt-2 text-gray-500">
+                Faol kitobxonlar
+              </p>
+            </div>
+
+            {/* Rating */}
+            <div className="group p-7 rounded-3xl bg-yellow-50 border border-yellow-100 hover:-translate-y-1 hover:shadow-xl transition-all">
+              <div className="text-4xl mb-5">⭐</div>
+
+              <div className="text-3xl font-bold text-gray-900">
+                4.8/5
+              </div>
+
+              <p className="mt-2 text-gray-500">
+                O‘rtacha reyting
+              </p>
+            </div>
+
+            {/* New Books */}
+            <div className="group p-7 rounded-3xl bg-green-50 border border-green-100 hover:-translate-y-1 hover:shadow-xl transition-all">
+              <div className="text-4xl mb-5">🆕</div>
+
+              <div className="text-3xl font-bold text-gray-900">
+                10+
+              </div>
+
+              <p className="mt-2 text-gray-500">
+                Yangi kitoblar
+              </p>
+            </div>
+
+          </div>
         </div>
-
-        <p className="mt-2 text-gray-500 dark:text-gray-400">
-          Mavjud kitoblar
-        </p>
-      </div>
-
-      {/* Readers */}
-      <div className="group p-7 rounded-3xl bg-purple-50 dark:bg-purple-900/10 border border-purple-100 dark:border-purple-900/30 hover:-translate-y-1 hover:shadow-xl transition-all">
-        <div className="text-4xl mb-5">👥</div>
-
-        <div className="text-3xl font-bold text-gray-900 dark:text-white">
-          1,200+
-        </div>
-
-        <p className="mt-2 text-gray-500 dark:text-gray-400">
-          Faol kitobxonlar
-        </p>
-      </div>
-
-      {/* Rating */}
-      <div className="group p-7 rounded-3xl bg-yellow-50 dark:bg-yellow-900/10 border border-yellow-100 dark:border-yellow-900/30 hover:-translate-y-1 hover:shadow-xl transition-all">
-        <div className="text-4xl mb-5">⭐</div>
-
-        <div className="text-3xl font-bold text-gray-900 dark:text-white">
-          4.8/5
-        </div>
-
-        <p className="mt-2 text-gray-500 dark:text-gray-400">
-          O‘rtacha reyting
-        </p>
-      </div>
-
-      {/* New Books */}
-      <div className="group p-7 rounded-3xl bg-green-50 dark:bg-green-900/10 border border-green-100 dark:border-green-900/30 hover:-translate-y-1 hover:shadow-xl transition-all">
-        <div className="text-4xl mb-5">🆕</div>
-
-        <div className="text-3xl font-bold text-gray-900 dark:text-white">
-          10+
-        </div>
-
-        <p className="mt-2 text-gray-500 dark:text-gray-400">
-          Yangi kitoblar
-        </p>
-      </div>
-
-    </div>
-
-  </div>
-</section>
+      </section>
 
       {/* Featured Book */}
       <FeaturedBook book={featuredBook} />
 
       {/* Why E.BOOKS */}
-      <section className="py-16 lg:py-24 bg-gray-50/50 dark:bg-gray-950/50">
+      <section className="py-16 lg:py-24 bg-gray-50/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 dark:text-white">Nima uchun E.BOOKS?</h2>
-            <p className="mt-2 text-gray-500 dark:text-gray-400">Sizga kerakli barcha narsa bir platformada</p>
+            <h2 className="text-3xl font-bold text-gray-900">
+              Nima uchun E.BOOKS?
+            </h2>
+
+            <p className="mt-2 text-gray-500">
+              Sizga kerakli barcha narsa bir platformada
+            </p>
           </div>
+
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
+
             {features.map((feature) => (
               <div
                 key={feature.title}
-                className="group p-6 rounded-2xl bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 hover:shadow-lg hover:shadow-gray-200/50 dark:hover:shadow-black/20 transition-all duration-300 hover:-translate-y-1"
+                className="group p-6 rounded-2xl bg-white border border-gray-200 hover:shadow-lg hover:shadow-gray-200/50 transition-all duration-300 hover:-translate-y-1"
               >
-                <div className="w-12 h-12 rounded-xl bg-blue-50 dark:bg-blue-900/20 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                  <feature.icon className="w-6 h-6 text-blue-600 dark:text-blue-400" />
+                <div className="w-12 h-12 rounded-xl bg-blue-50 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                  <feature.icon className="w-6 h-6 text-blue-600" />
                 </div>
-                <h3 className="font-semibold text-gray-900 dark:text-white mb-2">{feature.title}</h3>
-                <p className="text-sm text-gray-500 dark:text-gray-400 leading-relaxed">
+
+                <h3 className="font-semibold text-gray-900 mb-2">
+                  {feature.title}
+                </h3>
+
+                <p className="text-sm text-gray-500 leading-relaxed">
                   {feature.description}
                 </p>
               </div>
             ))}
+
           </div>
         </div>
       </section>
@@ -193,17 +211,27 @@ export default function Home() {
       {/* Newsletter */}
       <section className="py-16 lg:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
           <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-blue-600 to-indigo-700 p-8 lg:p-16 text-center">
+
             <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10" />
+
             <div className="relative space-y-6 max-w-2xl mx-auto">
+
               <div className="w-16 h-16 rounded-2xl bg-white/20 flex items-center justify-center mx-auto">
                 <Mail className="w-8 h-8 text-white" />
               </div>
-              <h2 className="text-3xl lg:text-4xl font-bold text-white">Loopda Qolish</h2>
+
+              <h2 className="text-3xl lg:text-4xl font-bold text-white">
+                Loopda Qolish
+              </h2>
+
               <p className="text-blue-100 text-lg">
-                Bizning xabarlar pochtamizga obuna bo'ling va eng so'nggi kitob chiqaruvlar, o'qish tavsiyalari, 
-                va eksklyuziv takliflar xabarlaringizga yetkaziladi.
+                Bizning xabarlar pochtamizga obuna bo'ling va eng so'nggi
+                kitob chiqaruvlar, o'qish tavsiyalari, va eksklyuziv
+                takliflar xabarlaringizga yetkaziladi.
               </p>
+
               <form
                 onSubmit={(e) => {
                   e.preventDefault();
@@ -218,6 +246,7 @@ export default function Home() {
                   placeholder="Enter your email"
                   className="flex-1 px-5 py-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder-blue-200 focus:outline-none focus:ring-2 focus:ring-white/30 backdrop-blur-sm"
                 />
+
                 <button
                   type="submit"
                   className="px-6 py-3 rounded-xl bg-white text-blue-600 font-semibold hover:bg-blue-50 transition-colors shadow-lg"
@@ -225,10 +254,12 @@ export default function Home() {
                   Obuna bo'ling
                 </button>
               </form>
+
             </div>
           </div>
         </div>
       </section>
+
     </div>
   );
 }
