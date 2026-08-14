@@ -67,11 +67,7 @@ export default function SearchBar({
             focus:ring-2
             focus:ring-blue-500/20
 
-            dark:border-gray-800
-            dark:bg-gray-900
-            dark:text-white
-            dark:placeholder:text-gray-500
-            dark:hover:border-gray-700
+           
           "
         />
 
@@ -94,8 +90,7 @@ export default function SearchBar({
               hover:bg-gray-100
               hover:text-gray-700
 
-              dark:hover:bg-gray-800
-              dark:hover:text-gray-200
+              
             "
           >
             <X className="h-4 w-4" />
