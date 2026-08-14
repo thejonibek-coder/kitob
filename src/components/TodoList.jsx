@@ -70,7 +70,7 @@ export default function TodoList() {
 
         {/* Title */}
         <h2 className="mb-6 text-2xl font-bold text-slate-900">
-          Todo List
+          Ismingiz va Fikringizni yozib qoldiring
         </h2>
 
         {/* Form */}
