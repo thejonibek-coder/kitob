@@ -21,57 +21,61 @@ export default function TodoList() {
     localStorage.setItem("ebooks-todos", JSON.stringify(todos));
   }, [todos]);
 
+  // Fikr qo'shish
   const addTodo = async (e) => {
-  e.preventDefault();
+    e.preventDefault();
 
-  if (!title.trim() || !description.trim()) {
-    return;
-  }
-
-  const newTodo = {
-    id: Date.now(),
-    title: title.trim(),
-    description: description.trim(),
-  };
-
-  try {
-    const response = await fetch("/api/telegram", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        title: newTodo.title,
-        description: newTodo.description,
-      }),
-    });
-
-    if (!response.ok) {
-      throw new Error("Telegramga yuborilmadi");
+    if (!title.trim() || !description.trim()) {
+      return;
     }
 
-    setTodos((prev) => [...prev, newTodo]);
+    const newTodo = {
+      id: Date.now(),
+      title: title.trim(),
+      description: description.trim(),
+    };
 
-    setTitle("");
-    setDescription("");
+    try {
+      const response = await fetch("/api/telegram", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          title: newTodo.title,
+          description: newTodo.description,
+        }),
+      });
 
-    alert("Fikringiz Telegram botga yuborildi! ✅");
-  } catch (error) {
-    console.error(error);
-    alert("Telegramga yuborishda xatolik ❌");
-  }
-};
+      if (!response.ok) {
+        throw new Error("Telegramga yuborilmadi");
+      }
+
+      setTodos((prev) => [...prev, newTodo]);
+
+      setTitle("");
+      setDescription("");
+
+      alert("Fikringiz Telegram botga yuborildi! ✅");
+    } catch (error) {
+      console.error(error);
+      alert("Telegramga yuborishda xatolik ❌");
+    }
+  };
+
+  // Fikrni o'chirish
+  const deleteTodo = (id) => {
+    setTodos((prev) => prev.filter((todo) => todo.id !== id));
+  };
 
   return (
-    <section className="w-full max-w-3xl mx-auto px-4 py-16">
+    <section className="mx-auto w-full max-w-3xl px-4 py-16">
       <div className="rounded-xl border border-slate-200 bg-white p-8 shadow-sm">
-
         <h2 className="mb-6 text-2xl font-bold text-slate-900">
           Fikrlar
         </h2>
 
         <form onSubmit={addTodo} className="space-y-4">
-
           <input
             type="text"
             placeholder="Ismingiz"
@@ -94,7 +98,6 @@ export default function TodoList() {
           >
             Yuborish
           </button>
-
         </form>
 
         <div className="my-7 border-t border-slate-900"></div>
@@ -112,10 +115,17 @@ export default function TodoList() {
               <p className="mt-1 text-[15px] leading-6 text-slate-600">
                 {todo.description}
               </p>
+
+              <button
+                type="button"
+                onClick={() => deleteTodo(todo.id)}
+                className="mt-4 rounded-md bg-red-600 px-4 py-2 text-sm font-semibold text-white transition hover:bg-red-700"
+              >
+                O'chirish
+              </button>
             </div>
           ))}
         </div>
-
       </div>
     </section>
   );
