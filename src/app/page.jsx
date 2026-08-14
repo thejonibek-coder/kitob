@@ -4,7 +4,9 @@ import Hero from "@/components/Hero";
 import BookGrid from "@/components/BookGrid";
 import CategoryCard from "@/components/CategoryCard";
 import FeaturedBook from "@/components/FeaturedBook";
+import TodoList from "@/components/TodoList";
 import { books } from "@/data/books";
+
 import {
   BookOpen,
   Smartphone,
@@ -18,8 +20,14 @@ import {
 import Link from "next/link";
 
 const categories = [
-  "Fiction", "Technology", "Business", "Science",
-  "Education", "History", "Self Development", "Programming"
+  "Fiction",
+  "Technology",
+  "Business",
+  "Science",
+  "Education",
+  "History",
+  "Self Development",
+  "Programming"
 ];
 
 const features = [
@@ -55,9 +63,9 @@ export default function Home() {
   const featuredBook = books.find((b) => b.featured) || books[0];
 
   const categoryCounts = categories.map((category) => ({
-    ...category,
+    name: category,
     count: books.filter(
-      (book) => book.category === category.name
+      (book) => book.category === category
     ).length,
   }));
 
@@ -68,11 +76,13 @@ export default function Home() {
       {/* Popular Books */}
       <section className="py-16 lg:py-24 bg-gray-50/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
           <div className="flex items-center justify-between mb-10">
             <div>
               <h2 className="text-3xl font-bold text-gray-900">
                 Popular Books
               </h2>
+
               <p className="mt-2 text-gray-500">
                 Most loved by our readers
               </p>
@@ -82,11 +92,13 @@ export default function Home() {
               href="/books"
               className="hidden sm:inline-flex items-center gap-2 text-blue-600 font-semibold hover:gap-3 transition-all"
             >
-              View All <ArrowRight className="w-4 h-4" />
+              View All
+              <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
 
           <BookGrid books={popularBooks} />
+
         </div>
       </section>
 
@@ -95,6 +107,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
           <div className="text-center mb-12">
+
             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-blue-50 text-blue-600 text-sm font-semibold mb-4">
               📊 E.BOOKS Statistics
             </div>
@@ -106,6 +119,7 @@ export default function Home() {
             <p className="mt-3 text-gray-500">
               Har kuni minglab kitobxonlar E.BOOKS'dan foydalanishadi
             </p>
+
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -166,8 +180,6 @@ export default function Home() {
         </div>
       </section>
 
-      <TodoList />
-
       {/* Featured Book */}
       <FeaturedBook book={featuredBook} />
 
@@ -176,6 +188,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
           <div className="text-center mb-12">
+
             <h2 className="text-3xl font-bold text-gray-900">
               Nima uchun E.BOOKS?
             </h2>
@@ -183,6 +196,7 @@ export default function Home() {
             <p className="mt-2 text-gray-500">
               Sizga kerakli barcha narsa bir platformada
             </p>
+
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
@@ -192,6 +206,7 @@ export default function Home() {
                 key={feature.title}
                 className="group p-6 rounded-2xl bg-white border border-gray-200 hover:shadow-lg hover:shadow-gray-200/50 transition-all duration-300 hover:-translate-y-1"
               >
+
                 <div className="w-12 h-12 rounded-xl bg-blue-50 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
                   <feature.icon className="w-6 h-6 text-blue-600" />
                 </div>
@@ -203,12 +218,16 @@ export default function Home() {
                 <p className="text-sm text-gray-500 leading-relaxed">
                   {feature.description}
                 </p>
+
               </div>
             ))}
 
           </div>
         </div>
       </section>
+
+      {/* Todo List / Fikrlar */}
+      <TodoList />
 
       {/* Newsletter */}
       <section className="py-16 lg:py-24">
@@ -242,6 +261,7 @@ export default function Home() {
                 }}
                 className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto"
               >
+
                 <input
                   type="email"
                   required
@@ -255,6 +275,7 @@ export default function Home() {
                 >
                   Obuna bo'ling
                 </button>
+
               </form>
 
             </div>
