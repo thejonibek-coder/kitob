@@ -166,6 +166,8 @@ export default function Home() {
         </div>
       </section>
 
+      <TodoList />
+
       {/* Featured Book */}
       <FeaturedBook book={featuredBook} />
 
