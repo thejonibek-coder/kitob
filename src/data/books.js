@@ -466,7 +466,8 @@ Maxdumning o‘qug‘uchi bolalar bilan muomalasi juda yaxshi edi. Savog‘ini b
 Maxdum mumkin qadar bolalarni o‘z maktabiga jalb qilishg‘a tirishar, ayniqsa boy va bek bolalarini o‘z qo‘lig‘a olish uchun har bir chorani ko‘rar edi. Masalan, boy va a’yondan birining o‘g‘li boshqa maktabda o‘qub yurgan bo‘lsa uni bolalar vositasi bilan o‘z maktabiga chaqirar, nima o‘qug‘anini, nimalar bilganini so‘rar, bola savog‘idan yaxshi javob beralmasa “sizda ayb yo‘q, o‘g‘lim, ustozingiz bir oz shundayroq odam… xo‘b, xo‘b; bizning maktablarga ham kelib yuring! Men o‘zim sizni juda do‘st tutaman-da!” der edi. Tabi’iy, bolaning shu kundan boshlab o‘z domlasidan ko‘ngli sovur, tez kunda maxdumning maktabiga kelib kirar edi. Ba’zi vaqt chet maktab bolalari bilan shunday muomalani ko‘chalarda ham qilar va o‘g‘li bo‘lg‘an boy va ashroflarga ham juda sertakalluf, xoksorona salom berib tanimasa ham ular bilan so‘rashar, nechta o‘g‘li borlig‘ini va ularning o‘qub-o‘qumag‘anliqlarini, o‘qushg‘a ixloslarini tekshirib, o‘zining ta’limida qo‘llang‘an yengil usullarini ham bir muncha tiqillatib o‘tar edi. Tabi’iy, maxdumning bunday harakatlari ko‘pincha foydasiz bo‘lmas, maktabiga yangidan-yangi shogirdlar to‘planib turar edilar. 
 O‘z qatoridag‘i maktabdor domlalarni aslo ko‘ralmas, ularga qarshi yuragida umrlik kek saqlar edi. Ba’zi majlislarda yo‘suni kelib qolsa – “ha, mulla falonchimi, ko‘b bolalarning umrini zoyi’ qilyapti, deb eshitaman… shogirdlaridan bir nechasi shikoyat qilishib menga kelishkan edilar… Qanday qilay, shogirdlarim o‘zimdan yetib ortsalar ham umrlari zoyi’ bo‘lmasin, dedim” der va eshitkuchilarga sezdirmay raqibini chimchilar; kezi keldi deguncha ikkinchi maktabdor to‘g‘risida shu yo‘sun zamzama so‘zlar edi. 
 Maxdum bo‘ychan, olago‘sht, siyrak mo‘y, oq tan, istarasi issig‘ bir domla edi. Yoshi ellidan oshqan, soch va soqolida bir muncha oqlar ko‘rinar edi. Kishi bilan so‘zlashkanda, ayniqsa, bir narsadan taajjublanganda siyrak va lekin to‘g‘ri, baquvvat o‘skan soqolini tutamlab o‘ng ko‘zini bir oz qisib qarar, odat qilg‘andan bo‘lsa kerak gap orasida “habba” degan so‘zni ko‘proq ishlatar edi. Domlaning bu “habba”si nima ma’noda qo‘llanilar, o‘zidan boshqa hech kim bilmaganidek, undan bu to‘g‘rida izoh ham so‘ramag‘an edilar. Har holda “habba – habhali” yoki “ha, barakalla” bo‘lsa kerak. Chunki ul bir narsadan hursand va rozi bo‘lg‘anda aksar “habba” deb yuboradir. 
-Shu yergacha bir necha sahifalarni maxdumning ta’rifi bilan to‘ldirdiq. Ehtimolki domlaning g‘iybatini ham qildiq va qilarmiz. Lekin shunisidan xotirjam’mizki, yo‘qni-yo‘ndirmadiq, maxdumning sha’nida bor gaplarnigina yozdiq va yozarmiz. Maxdumning hamma nuqsonini yuvib ketarlik bir jumladan so‘ng yana o‘z ishimizda bo‘lamiz: — nima bo‘lg‘anda ham maxdum o‘z zamonasining eng olding‘i domlalaridan, Qo‘qon aksariyatining savodxon bo‘lishlarig‘a sababchi ustozlardan, hatto ulug‘ xizmatlarga kishi yetishdirib berguchi nodir muallimlardan edi.`
+Shu yergacha bir necha sahifalarni maxdumning ta’rifi bilan to‘ldirdiq. Ehtimolki domlaning g‘iybatini ham qildiq va qilarmiz. Lekin shunisidan xotirjam’mizki, yo‘qni-yo‘ndirmadiq, maxdumning sha’nida bor gaplarnigina yozdiq va yozarmiz. Maxdumning hamma nuqsonini yuvib ketarlik bir jumladan so‘ng yana o‘z ishimizda bo‘lamiz: — nima bo‘lg‘anda ham maxdum o‘z zamonasining eng olding‘i domlalaridan, Qo‘qon aksariyatining savodxon bo‘lishlarig‘a sababchi ustozlardan, hatto ulug‘ xizmatlarga kishi yetishdirib berguchi nodir muallimlardan edi.`,
+price: "Bepul"
   },
 
   {
@@ -10142,7 +10143,8 @@ She then ran gaily off, rejoicing as she rambled about, in the hope of being at 
 
 
 
-Грамматический справочник | Тексты`
+Грамматический справочник | Тексты`,
+price: "Bepul"
 
   },
 
