@@ -12498,7 +12498,8 @@ Nashri va qabul qilinishi
 Ma’lumotlarga ko‘ra, kitob ilk bor 2021-yilda o‘zbek tilida nashr etilgan. Bosma nashri 160 bet atrofida bo‘lib, "ILM ZIYO ZAKOVAT" nashriyoti tomonidan chop etilgan. Kitob O‘zbekistondagi kitob do‘konlari va kutubxona platformalarida uchraydi hamda biznes va shaxsiy rivojlanish adabiyotiga qiziquvchilar orasida tavsiya qilinadi. 
 
 Nima uchun e’tiborga loyiq
-Ko‘plab zamonaviy biznes kitoblari marketing yoki menejmentga urg‘u bersa, Savdogarlar ustozi tijoratni axloqiy mas’uliyat bilan bog‘laydi. Shu sababli u biznes qo‘llanmasidan ko‘ra ko‘proq savdo madaniyati, ishonch va halol tadbirkorlik qadriyatlarini yorituvchi ma’rifiy asar sifatida o‘qiladi.`
+Ko‘plab zamonaviy biznes kitoblari marketing yoki menejmentga urg‘u bersa, Savdogarlar ustozi tijoratni axloqiy mas’uliyat bilan bog‘laydi. Shu sababli u biznes qo‘llanmasidan ko‘ra ko‘proq savdo madaniyati, ishonch va halol tadbirkorlik qadriyatlarini yorituvchi ma’rifiy asar sifatida o‘qiladi.`,
+    price: 25000
   },
 ];
 
