@@ -12499,7 +12499,7 @@ Ma’lumotlarga ko‘ra, kitob ilk bor 2021-yilda o‘zbek tilida nashr etilgan.
 
 Nima uchun e’tiborga loyiq
 Ko‘plab zamonaviy biznes kitoblari marketing yoki menejmentga urg‘u bersa, Savdogarlar ustozi tijoratni axloqiy mas’uliyat bilan bog‘laydi. Shu sababli u biznes qo‘llanmasidan ko‘ra ko‘proq savdo madaniyati, ishonch va halol tadbirkorlik qadriyatlarini yorituvchi ma’rifiy asar sifatida o‘qiladi.`,
-    price: 25000
+    price: "Bepul"
   },
 ];
 
