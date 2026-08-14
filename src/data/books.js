@@ -384,7 +384,8 @@ Qutidor mehmonlarni jo‘natib yotish uchun yeshinar ekan, Oftob oyim so‘radi:
 — To‘ybekaning maxtag‘anicha bormi, o‘zi?
 — Bor, — dedi qutidor va g‘italandi, — xudo kishiga o‘g‘il bersa shundayini bersin-da.
 Oftob oyim kula-kula To‘ybekaning Otabek to‘g‘ri-sida so‘zlagan gaplarini va Kumush bilan bo‘lg‘an mojarosini so‘zlab chiqdi. Qutidor ham kulgidan o‘zini to‘xtatolmas ekan:
-— Tentagingning aqli balo, kiroyi kuyaving shundog‘ bo‘lsa, — dedi.`
+— Tentagingning aqli balo, kiroyi kuyaving shundog‘ bo‘lsa, — dedi.`,
+price: "Bepul"
   },
 
   {
@@ -780,7 +781,8 @@ Qizlarning bu «itdek» poyloqchisini ko‘plashib uyg‘otdilar, ko‘plashib a
 Mehmonlar osh-suv taraddudiga yo‘l qo‘ymasdan, sut-qatiq bilan quruq choy ichib, darhol o‘tirgan joylari-ga uzandilar va aravada urinib kelganlari uchun uzanar-uzanmas uyquga ketdilar.
 Aravakash ichkaridan chiqqan ikki non bilan bir piyola qatiqni ichib oldi-da, otni tashqariga bog‘lab, o‘zi arava ustiga cho‘zildi. Uyqusi qochgan edi... Miyasi-da, umrida birinchi martaba o‘laroq, ajib va shirin xayollar aylanardi. Ko‘qdagi oyga qarab, yerdagi oyni o‘ylar va boyagiday shirin-shirin qulimsirardi...
 Ichkaridagilar ham dong qotdilar. Faqat, oralari-da, xuddi ko‘chadagi yosh yigitcha singari, uyqusi ochilgan, ko‘kragidagi yangi, begona va shirin hislarni anglayolmasdan xayron bo‘lgan birov bor edi. U ham ko‘kdagi oyga qarab, yerdagi «toy»ni o‘ylar va yuzlari anorday qizarardi...
-Shu topda, qishloqning darbadar itlari avjga kelgan, har tomondan hurishlarini yuksaltirganlar; tor ko‘chaning tugalishidagi soy hamma uxlab jim bo‘lganda, haybatli ovozini boricha qo‘yib yuborib, och yo‘lbarsday «guv-guv» bo‘kirardi...`
+Shu topda, qishloqning darbadar itlari avjga kelgan, har tomondan hurishlarini yuksaltirganlar; tor ko‘chaning tugalishidagi soy hamma uxlab jim bo‘lganda, haybatli ovozini boricha qo‘yib yuborib, och yo‘lbarsday «guv-guv» bo‘kirardi...`,
+price: "Bepul"
   },
 
   {
@@ -916,7 +918,8 @@ Ko‘cha eshigimiz ichkaridan zanjir ekan. Taqillatdim. Tirqishidan qarab turibm
 — Orifni uribsan-ku?
 — Yolg‘on! Uning o‘zi meni urdi.
 — Dars tayyorlamasang, uy ishlariga qarashmasang, singillaringga kun bermasang, kunbo‘yi mushtlashsang — seni o‘ldirib qo‘ya qolmasammi, — deb oyim qo‘lidagi tayoqni menga qarab otdi. Chap berib qoldim. — Yo‘qol, ko‘zimga ko‘rinma!
-Ko‘cha eshik oldida turib qoldim. Yo‘q, oyim shashtidan qaytadiganga o‘xshamaydi. Endi nima qildim, qayoqqa boray, kimdan boshpana so‘rayman? Qorinchi, ovqatni qayoqdan topdim endi...`
+Ko‘cha eshik oldida turib qoldim. Yo‘q, oyim shashtidan qaytadiganga o‘xshamaydi. Endi nima qildim, qayoqqa boray, kimdan boshpana so‘rayman? Qorinchi, ovqatni qayoqdan topdim endi...`,
+price: "Bepul"
   },
 
   {
@@ -945,7 +948,8 @@ Shuningdek, Rowling tarafidan yozilgan ssenariyga asoslangan Harry Potter and th
 
 Yozuvchi — J. K. Rowling
 Dastlabki yillar
-Filmlar Harry Potter ismli bolaning hayotini aks ettiradi. Birinchi kitob, Harri Potter va hikmatlar toshida, Harry Durslilar uyidagi zinapoya ostidagi shkafda, uning xolasi, amakisi va amakivachchasi Dadli bilan yashaydi. Durslilar oʻzlarini mutlaqo normal deb hisoblashadi, ammo 11 yoshida Harry uning sehrgar ekanligini aniqlaydi. U Hagrid ismli yarim gigant bilan uchrashadi, u uni Hogvarts jodugarlik va sehrgarlik maktabiga borishga taklif qiladi. Harry goʻdakligida uning ota-onasi qora sehrgar Lord Voldemort tomonidan oʻldirilganligini biladi. Voldemort Harryni oʻldirmoqchi boʻlganida, uning tavqi laʼnati qayta tiklandi va Harry peshonasida chaqmoq shaklidagi chandiq bilan omon qoladi.Poyezda u Germiona va Ron ismli bolalar bilan tanishadi va keyinchalik uchalasi juda yaqin do'st bo'lishadi.`
+Filmlar Harry Potter ismli bolaning hayotini aks ettiradi. Birinchi kitob, Harri Potter va hikmatlar toshida, Harry Durslilar uyidagi zinapoya ostidagi shkafda, uning xolasi, amakisi va amakivachchasi Dadli bilan yashaydi. Durslilar oʻzlarini mutlaqo normal deb hisoblashadi, ammo 11 yoshida Harry uning sehrgar ekanligini aniqlaydi. U Hagrid ismli yarim gigant bilan uchrashadi, u uni Hogvarts jodugarlik va sehrgarlik maktabiga borishga taklif qiladi. Harry goʻdakligida uning ota-onasi qora sehrgar Lord Voldemort tomonidan oʻldirilganligini biladi. Voldemort Harryni oʻldirmoqchi boʻlganida, uning tavqi laʼnati qayta tiklandi va Harry peshonasida chaqmoq shaklidagi chandiq bilan omon qoladi.Poyezda u Germiona va Ron ismli bolalar bilan tanishadi va keyinchalik uchalasi juda yaqin do'st bo'lishadi.`,
+price: "Bepul"
   },
 
   {
@@ -1267,7 +1271,8 @@ The dark came into the room from the little window that opened in the side of Th
 
  
 
-The dark filled all the room, and the fire died down, and the shadows were lost, and still they played on. And suddenly first one and then another began to sing as they played, deep-throated singing of the dwarves in the deep places of their ancient homes; and this is like a fragment of their song:`
+The dark filled all the room, and the fire died down, and the shadows were lost, and still they played on. And suddenly first one and then another began to sing as they played, deep-throated singing of the dwarves in the deep places of their ancient homes; and this is like a fragment of their song:`,
+price: "Bepul"
     
   },
 
@@ -2161,8 +2166,8 @@ AJALING YETDI!» deb yozilgan edi. Demak, u ablah
 iltimos qilishdan po'pisaga o'tipti. Menga m a’lumki,
 chikagolik banditlar aytganini qilmay q o 'y is h m a y d i.
 k KJbd&WLitJAW&i
-30`
-
+30`,
+price: "Bepul"
   },
 
   {
@@ -3055,7 +3060,8 @@ AJALING YETDI!» deb yozilgan edi. Demak, u ablah
 iltimos qilishdan po'pisaga o'tipti. Menga m a’lumki,
 chikagolik banditlar aytganini qilmay q o 'y is h m a y d i.
 k KJbd&WLitJAW&i
-30`
+30`,
+    price: "Bepul"
 
   },
 
@@ -6163,7 +6169,8 @@ www.ziyouz.com кутубхонаси 63
 Бўзбола табассум қилди: бу Фотиманинг илк ўпичи эди.
 — Мен бораяпман, — деди у, — сенинг ёнингга бораяпман, Фотима.
 www.ziyouz.com
-2008 `
+2008 `,
+    price: "Bepul"
 
   },
 
@@ -9271,7 +9278,8 @@ www.ziyouz.com кутубхонаси 63
 Бўзбола табассум қилди: бу Фотиманинг илк ўпичи эди.
 — Мен бораяпман, — деди у, — сенинг ёнингга бораяпман, Фотима.
 www.ziyouz.com
-2008 `
+2008 `,
+    price: "Bepul"
 
   },
 
@@ -9481,8 +9489,8 @@ __________ Сармоя тикиш санъати_____
 фикрлар бўлиши кераклигини ва унингдек фикрлаш
 кераклигини ўшандаёқ тушуниб етдим. Билардимки,
 у каби фикрласам, Албатта, бой бўла олардим. Агар
-шундай қилмасам, қанча пулим б`
-
+шундай қилмасам, қанча пулим б`,
+price: "Bepul"
   },
 
   {
@@ -9544,8 +9552,8 @@ If you like the style of visual notes that I shared and want to develop that ski
 
 Cheers,
 
--Doug`
-
+-Doug`,
+    price: "Bepul"
   },
 
   {
@@ -9614,7 +9622,8 @@ Blog: http://gpcoder.com/
 References
 Clean Code: A Handbook of Agile Software Craftsmanship
 
-Building Maintainable Software`
+Building Maintainable Software`,
+price: "Bepul"
 
   },
 
@@ -9634,7 +9643,8 @@ JavaScript katta-kichik harflarga sezgir (case-sensitive) tildir. Bu shuni angla
 
 JavaScript dasturlardagi tokenlar orasida keladigan bo'shliqlarni e'tiborsiz qoldiradi. Aksariyat hollarda, JavaScript qator uzilishlarini ham e'tiborsiz qoldiradi (lekin istisno uchun §2.6-bo'limga qarang). Dasturlaringizda bo'shliqlar va yangi qatorlardan erkin foydalana olganingiz uchun, siz dasturingizni kodni o'qish va tushunishni osonlashtiradigan tarzda, chiroyli va izchil formatlashingiz hamda xatboshilar qo'yishingiz (indent) mumkin.
 
-Oddiy bo'shliq belgisidan (\u0020) tashqari, JavaScript tabulyatsiya, turli ASCII boshqaruv belgilari va bir nechta Unicode bo'shliq belgilarini ham bo'shliq belgisi (whitespace) sifatida tan oladi. JavaScript yangi qator, karetka qaytishi va karetka qaytishi/qator uzilishi ketma-ketligini qator yakunlovchilari sifatida qabul qiladi.`
+Oddiy bo'shliq belgisidan (\u0020) tashqari, JavaScript tabulyatsiya, turli ASCII boshqaruv belgilari va bir nechta Unicode bo'shliq belgilarini ham bo'shliq belgisi (whitespace) sifatida tan oladi. JavaScript yangi qator, karetka qaytishi va karetka qaytishi/qator uzilishi ketma-ketligini qator yakunlovchilari sifatida qabul qiladi.`,
+price: "Bepul"
 
   },
 
@@ -9670,7 +9680,8 @@ As we were talking, Tom asked about my career in thebond business. He sounded sk
 
 “Gatsby? What Gatsby?” Daisy demanded.
 
-Before I could respond, dinner was announced, and Tom led me into the dining room. When the phone rang inside, and thebutler went to answer it, Daisy leaned toward me, eager to share a family secret. “It's about the butler's nose. Want to hear?”`
+Before I could respond, dinner was announced, and Tom led me into the dining room. When the phone rang inside, and thebutler went to answer it, Daisy leaned toward me, eager to share a family secret. “It's about the butler's nose. Want to hear?”`,
+price: "Bepul"
 
   },
 
@@ -12246,8 +12257,8 @@ bo‘lishini bilmagan ekanman-a!
 — Nimasini aytasan, men ham bilmasdpm, — qo‘shildi unga hamrohi.
 Yuqorida, o‘z kulbasida, chol hamon uxlab yotardi. U yana muk tushib uxlar, bola esa yonida
 o‘tirib unnng uyqusini ardoqlardi. Cholning tushiga arslonlar kirar edi.
-1952.`
-
+1952.`,
+    price: "Bepul"
   },
 
   {
@@ -12385,7 +12396,8 @@ Bekki unga ajablanib qaradi.
 
 –Endi sen ham bayramlarda mendan boshqasini sherik qilmaysan!–dedi Tom. –Bilasanmi, Emmining qallig’i bo’lgan paytlarim…
 
-Bepul matn qismi tugadi.`
+Bepul matn qismi tugadi.`,
+price: "Bepul"
 
   },
 
@@ -12409,7 +12421,8 @@ Bepul matn qismi tugadi.`
 Тематически, роман посвящён последствиям тоталитаризма, массового наблюдения[англ.] и промывания мозгов людей в тоталитарном обществе, прообразом которого для демократического социалиста Оруэлла служили сталинизм СССР и нацистская Германия[9].
 
 История создания
-В письме своему издателю Фреду Уорбургу от 22 октября 1948 года Оруэлл сообщил, что первая мысль о романе возникла у него в 1943 году[10]:356. Он органично продолжает тему «преданной революции», раскрытую в «Скотном дворе». Первыми названиями романа были «Последний человек в Европе» и «Live and Dead» («Живые и мёртвые»). Появляются основные моменты и линии — двухминутки ненависти, двоемыслие, новояз, любовь и страх в тоталитарном обществе.`
+В письме своему издателю Фреду Уорбургу от 22 октября 1948 года Оруэлл сообщил, что первая мысль о романе возникла у него в 1943 году[10]:356. Он органично продолжает тему «преданной революции», раскрытую в «Скотном дворе». Первыми названиями романа были «Последний человек в Европе» и «Live and Dead» («Живые и мёртвые»). Появляются основные моменты и линии — двухминутки ненависти, двоемыслие, новояз, любовь и страх в тоталитарном обществе.`,
+price: "Bepul"
   },
 
   {
@@ -12457,6 +12470,7 @@ When I met one of them who seemed clever enough to me, I tried to show him my Dr
 “That is a hat.”
 
 Then I did not talk to that person about boas, or forests, or stars. I talked to him about bridge, and golf, and politics, and ties.`,
+price: "Bepul"
   },
   {
     id:21,
