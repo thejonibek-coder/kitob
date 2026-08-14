@@ -21,24 +21,46 @@ export default function TodoList() {
     localStorage.setItem("ebooks-todos", JSON.stringify(todos));
   }, [todos]);
 
-  const addTodo = (e) => {
-    e.preventDefault();
+  const addTodo = async (e) => {
+  e.preventDefault();
 
-    if (!title.trim() || !description.trim()) {
-      return;
+  if (!title.trim() || !description.trim()) {
+    return;
+  }
+
+  const newTodo = {
+    id: Date.now(),
+    title: title.trim(),
+    description: description.trim(),
+  };
+
+  try {
+    const response = await fetch("/api/telegram", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        title: newTodo.title,
+        description: newTodo.description,
+      }),
+    });
+
+    if (!response.ok) {
+      throw new Error("Telegramga yuborilmadi");
     }
-
-    const newTodo = {
-      id: Date.now(),
-      title: title.trim(),
-      description: description.trim(),
-    };
 
     setTodos((prev) => [...prev, newTodo]);
 
     setTitle("");
     setDescription("");
-  };
+
+    alert("Fikringiz Telegram botga yuborildi! ✅");
+  } catch (error) {
+    console.error(error);
+    alert("Telegramga yuborishda xatolik ❌");
+  }
+};
 
   return (
     <section className="w-full max-w-3xl mx-auto px-4 py-16">
