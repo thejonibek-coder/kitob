@@ -12517,6 +12517,176 @@ Nima uchun e’tiborga loyiq
 Ko‘plab zamonaviy biznes kitoblari marketing yoki menejmentga urg‘u bersa, Savdogarlar ustozi tijoratni axloqiy mas’uliyat bilan bog‘laydi. Shu sababli u biznes qo‘llanmasidan ko‘ra ko‘proq savdo madaniyati, ishonch va halol tadbirkorlik qadriyatlarini yorituvchi ma’rifiy asar sifatida o‘qiladi.`,
     price: "Bepul"
   },
+  {
+    id:22,
+    title: "Shum bola",
+    author: "Asqar Mahkamov",
+    category: "Tarixiy",
+    description:"Qissa, sarguzasht va hayotiy hikoyalar to'plami.",
+    image:
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZ4-TO84mMx2tWyl4AaJgfthb7wHCCzc-8wUc9bkxQvA&s=10",
+    rating: 4.8,
+    year: 2017,
+    content: `Shum bolaning sarguzashtlari kechgan qishloq, bozor, mahalla, daryo bugun qanday nomlanadi? – Etnograflar uchun noyob qo‘llanma
+
+     G‘afur G‘ulomning qalbi daryodek toshqin Shum bolasi borgan manzillar hozir qayerda qoldi? Buyuk adibning taqdiri sho‘r Shum bolasi Toshkent atroflarida non axtarib, rizq axtarib qayerlarga borgan?
+
+ 
+
+Umuman, “Shum bola” etnograflar uchun noyob qo‘llanma. Unda XX asr boshlarida Toshkent va uning atroflarida mavjud shahar-u qishloqlardagi madaniy hayot, ismlar, joy nomlari, bolalar o‘yinlari, maishiy turmush tarzi haqida jonli hikoyalarni o‘qiysiz.
+
+ 
+
+“Yoshlar kundaligi” hech kim qo‘l urmagan mavzu yuzasidan tadqiqot o‘tkazdi.
+
+ 
+
+Quyida yetimlikda, xor-u zorlikda yoz oylarida shahar atroflarini kezib yurgan shum bola – Qoravoy va uning do‘sti Omon bugungi Toshkent viloyati hududining qayerlarida bo‘lganini havola qilamiz.
+
+ 
+
+
+
+ 
+
+1. Shum bolaning do‘sti Omon bilan Ko‘kterakdagi bozordagi hangomalari, sheshening o‘tovidagi o‘g‘ri kissavur Sultonalining va uning sheriklari bilan dasturxon ustidagi muloqot voqealari bo‘lib o‘tadi. 
+
+ 
+
+Ko‘kterak – hozirgi Toshkent tumanidagi katta qishloqlardan biri.
+
+ 
+
+2. Toshkent, Chimkent va Sayram muzofotlarining chorakam bir ka’basi, deya ta’riflangan Eshonbozor shahri bo‘ldi. Bu – hozirgi mashhur “Bek baraka” bozori yaqinidagi “Eshonguzar” mavzesi deb taxmin qilinadi.
+
+ 
+
+Bu joy bugungi kunda Zangiota tumani hududida hisoblanadi.
+
+ 
+
+
+
+ 
+
+3. Eshonguzardan haydalgan Qoravoyning Kalas daryosini kechib o‘tishi hikoya qilinadi. Aynan shu yerda birorta ulovli yo‘lovchini kutib, oldidan katta daryo chiqib qolgan mashhur sayyohlarning ashulasini suvning sharqiroq oqinlariga qarab kuylanadi.
+
+ 
+
+Daryo toshqin, suvlar to‘lqin,
+
+O‘tolmayman-a, yor-yor,
+
+Otim oriq, manzil uzoq,
+
+Yetolmayman-a, yor-yor,
+
+Otginamni oriq qilgan
+
+Shu mayda tosh-a, yor-yor.
+
+Ranginamni sariq qilgan
+
+U qalamqosh-a, yor-yor...
+
+ 
+
+Shu orada oriq baytalga mingan uzumchi chol bolani narigi tomonga o‘tkazib qo‘yishga majbur bo‘ladi. Otaxon bu joylar haqida aytib beradi. Ma’lum bo‘lishicha, daryoning nomi Kalas, unga nisbatan esa Quri Kalas qishlog‘i deb nomlangan ekan.
+
+ 
+
+Adabiyotlarda bu haqida – Qozog‘iston viloyati va Toshkent viloyatidagi daryo bo‘lib, hududdagi Qoplonbek qishlog‘idan quyiroqda juda sayozlanib qoladi. Hozir uning havzasi past tog‘larda bo‘lganidan u qadar sersuv emas, daryoning tekislikka chiqish joyida mavsumiga o‘zgaruvchan bo‘ladi. 
+
+ 
+
+O‘z nomiga monand xalq tilidagi Keles ayni paytda Toshkent tumani markazi hisoblanadi.
+
+ 
+
+4. Asarda Shum bola bilan yana bir hangomasi shu yerlik Sariboy bo‘lis mulkida sodir bo‘ladi. U haqida bola “Xo‘jayinlarimning ichida eng xudo urgan badbaxti, ziqnasi” deya ta’rif bergan.
+
+ 
+
+Sariboy Chuvalachidagi Yusuf kontor bilan qimor o‘ynab, uning mevazorlari ichki-tashqi qo‘rg‘onchasi, butun dov-dastgohining hammasini yutib oldi. Bu joy Sebzor dahasidagi qadimgi mahalla. “Toshkent” ensiklopediyasida keltirilishicha, Teshikqopqa, Chigitboshi, Kaduvot, Hasanboy mahallalari bilan chegaradosh. O‘sha paytlarda bu yerda 100 dan ortiq xonadon yashagan. Aholisi, asosan, o‘zbeklar bo‘lib, ko‘pchiligi hunarmandchilik, dehqonchilik va bog‘dorchilik (shahar tashqarisidagi yerlarida), savdo-sotiq bilan shug‘ullangan. XX asr boshlari Chuvalachida tegirmon, bir necha baqqollik do‘konlari, choyxona, masjid bo‘lgan. Hozir Chuvalachi hududida bir qavatli turar joy binolari saqlangan. Chuvalachi ko‘chasi mavjud. 
+
+ 
+
+Ayni paytda Chuvalachi Toshkent tumanidagi mahallalardan biri hisoblanadi.
+
+ 
+
+
+
+ 
+
+5. Mazkur asarda, shuningdek, Ko‘kterak bozorida toshkentlik boyning qo‘ylarini haydab borgan Qoravoy va Omon ikkalasi shu yerdan ham qochishadi. Ikki do‘st o‘rtasidagi janjaldan so‘ng qahramonimiz tag‘in shaharga qaytadi. Uning Hoji bobo uyidagi sarxush ko‘knorli chilim chekuvchi giyohvandlar bilan bo‘lgan hayotiy voqealari orqali adib bolalarning og‘ir turmush sharoitini mohirlik bilan tasvirlagan.
+
+ 
+
+Toshkent tumanida joylashgan Ko‘kterakdagi mol bozor hozir ham bor, biroq ilgarigidek Toshkent atroflaridagi eng katta hayvon bozori emas. 
+
+ 
+
+6. Qoravoy uyidan qochib Sag‘bonga ammasinikiga boradi. U yerda pochchasining qarchig‘aylariga qatiq ichiraverib, ovchi qushlarini o‘ldirib qo‘yadi. Faqat qumri qoladi. Shunda u yerdan ham qochib ketadi. Pochchasi onasining oldiga borib, o‘g‘lini qidirayotgan onaizorga qarab, Qoravoy Qoplonbekdagi amakilarining oldiga ketganini aytadi. 
+
+ 
+
+Qoplonbek hozirgi Toshkent tumanida joylashgan qishloqlardan biri.
+
+ 
+
+7. “Shum bola” filmini ko‘rganda Omon va Qoravoy mol bozorida ariq bo‘yida o‘tirib, oshamlab-oshamlab, sopol kosani boshidan ko‘tarib uvra oshi yegan joyini yaxshi bilishadi. Bu Zolariq (hozirgi nomi Zaxariq) bo‘lib, Ko‘kterakdagi mashhur mol bozoridan oqib o‘tgan.
+
+ 
+
+ 
+
+ 
+
+Hozirgi kunda asarda keltirilgan Zaxariq bo‘ylari M.Pozilov agrofirmasi hududi hisoblanadi.
+
+ 
+
+8. Sulton kissavur bozorda bir Abdurayim ismli bo‘sh-bayov yigitning pulini o‘marib, aldaydi. Muttahamlik qilib, uning o‘zini o‘g‘riga chiqaradi. O‘sha Abdurayim yigit “To‘qli jallob” mahallasidan ekanligini aytadi. 
+
+ 
+
+Bu mahallaning bir qismi hozir Zangiota tumani hududiga to‘g‘ri keladi, bir qismi esa poytaxt hududi hisoblanadi. Mahalla Toshkentning Ko‘kcha mavzesiga qaragan, asosan mol savdosi (jalloblik) bilan shug‘ullangan. 
+
+ 
+
+9. Bozordan chiqib, Yaxshiqiz kampirning uyida tunab qolishadi. Shu yerda Shum bola “Daryo toshqin”ni kuylagan joy. Yarim tunda Sulton kissavur domlaning bor pulini olib qo‘yadi. Erta tongda domla Omon bilan Qoravoyni uyg‘otib, kissavurlardan qochish kerakligini aytadi. Ular Qing‘iroq tepa degan joyga qarab qochmoqchi bo‘lishadi. 
+
+ 
+
+Qing‘iroq tepa Toshkent tumani hududidagi qishloq, shu nomdagi kanal ham oqib o‘tadi. 
+
+ 
+
+Umuman olganda, G‘afur G‘ulom Shum bolaning sarguzashtlari orqali biz uchun yaqin va oddiy odamlar o‘z hayoti bilan andarmon bo‘ladigan manzillarda xalq hayotining, inson ichki olami turfa manzaralarining guvohi bo‘lamiz. Endilikda ushbu adabiy asar orqali Toshkent viloyatining bu joylari haqida geografik va tarixiy ma’lumotlardan farqli o‘laroq bir bola nigohi bilan o‘sha davr nafasini his qilgandek bo‘lamiz.
+
+ 
+
+Shu o‘rinda bir taklifni bildirmoqchi edik. Ukrainaning Odessa shahrida “12 stul” va “Oltin buzoq” romanlari qahramoni Ostan Benderga haykal o‘rnatilgan. Umuman, mashhur adabiy qahramonlarga qo‘yilgan haykallar va monumentlar ko‘p. Chirchiqda Rasul Hamzatovning “Turnalar” she’riga monument qo‘yilgan.
+
+ 
+
+Asar voqealari Ko‘kterak va uning atroflarida, Keles, Chuvalachi singari hududlarda bo‘ladigan “Shum bola” qissasi va uning qahramonlari uchun Toshkent tumanida xiyobon yoki yodgorlik tashkil qilinsa, yoshlarning sevimli maskani bo‘lar edi. 
+
+ 
+
+Bu ishning tarbiyaviy ahamiyati ham katta. Chunki 100 yillar burun bolalar och-nahor, o‘g‘irlik oddiy ish, shumlik ham shunga yarasha, yurt egasiz, kissavur ko‘p, boylarda insof yo‘q bir kunlar o‘tgan. Bugunning bolalari shum qadam, shum taqdir emas, ular xush qadam, xush taqdir bolalar. 
+
+ 
+
+Ammo o‘tmishni unutmaslik, yod etib turish ham kerak-da...
+
+ 
+
+Abdulaziz MUSAYEV,
+
+“Yoshlar kundaligi” muxbiri`
+  }
 ];
 
 /*
