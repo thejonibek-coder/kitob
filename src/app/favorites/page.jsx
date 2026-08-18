@@ -52,7 +52,7 @@ export default function FavoritesPage() {
           Your Favorites
         </h1>
       </div>
-
+    
       {favoriteBooks.length === 0 ? (
         <EmptyState type="favorites" />
       ) : (
