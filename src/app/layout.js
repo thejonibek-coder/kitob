@@ -1,36 +1,17 @@
 import "./globals.css";
-import { Inter } from "next/font/google";
+import { ThemeProvider } from "./providers";
 
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
-
-import {
-  ThemeProvider,
-  FavoritesProvider,
-} from "./providers";
-
-import { LanguageProvider } from "./LanguageContext";
-
-const inter = Inter({
-  subsets: ["latin"],
-});
+export const metadata = {
+  title: "E.BOOKS",
+  description: "Elektron kitoblar platformasi",
+};
 
 export default function RootLayout({ children }) {
   return (
     <html lang="uz" suppressHydrationWarning>
-      <body className={inter.className}>
+      <body>
         <ThemeProvider>
-          <LanguageProvider>
-            <FavoritesProvider>
-              <Navbar />
-
-              <main>
-                {children}
-              </main>
-
-              <Footer />
-            </FavoritesProvider>
-          </LanguageProvider>
+          {children}
         </ThemeProvider>
       </body>
     </html>
