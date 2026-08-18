@@ -8,53 +8,25 @@ export default function ThemeToggle() {
 
   return (
     <button
-      type="button"
       onClick={toggleTheme}
-      aria-label={
-        theme === "dark"
-          ? "Switch to light mode"
-          : "Switch to dark mode"
-      }
-      title={
-        theme === "dark"
-          ? "Light mode"
-          : "Dark mode"
-      }
+      aria-label="Mavzuni almashtirish"
       className="
-        group
-        flex h-10 w-10
-        items-center justify-center
+        relative flex h-10 w-10 items-center justify-center
         rounded-xl
-
-        text-gray-600
-        transition-all duration-200
-
-        hover:bg-gray-100
-        hover:text-gray-900
-
-        dark:text-gray-400
-        dark:hover:bg-gray-800
-        dark:hover:text-white
-
-        active:scale-95
+        border border-gray-200
+        bg-white
+        text-gray-700
+        transition-all duration-300
+        hover:scale-105
+        dark:border-gray-700
+        dark:bg-gray-900
+        dark:text-yellow-400
       "
     >
       {theme === "dark" ? (
-        <Sun
-          className="
-            h-5 w-5
-            transition-transform duration-300
-            group-hover:rotate-45
-          "
-        />
+        <Sun size={20} />
       ) : (
-        <Moon
-          className="
-            h-5 w-5
-            transition-transform duration-300
-            group-hover:-rotate-12
-          "
-        />
+        <Moon size={20} />
       )}
     </button>
   );
